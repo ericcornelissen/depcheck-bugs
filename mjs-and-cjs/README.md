@@ -28,4 +28,25 @@ From my testing, this is regardless of
 1. Whether they're dependencies or devDependencies.
 1. The value of `"type"` in the package manifest.
 
+## `depcheck --json`
+
+```sh
+$ ./node_modules/.bin/depcheck --json | json
+{
+  "dependencies": [
+    "ava",
+    "dotenv"
+  ],
+  "devDependencies": [],
+  "missing": {},
+  "using": {
+    "depcheck": [
+      "path/to/mjs-and-cjs/package.json"
+    ]
+  },
+  "invalidFiles": {},
+  "invalidDirs": {}
+}
+```
+
 [depcheck]: https://github.com/depcheck/depcheck

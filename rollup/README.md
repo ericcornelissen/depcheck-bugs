@@ -21,5 +21,25 @@ Unused devDependencies
 * rollup
 ```
 
+## `depcheck --json`
+
+```sh
+$ ./node_modules/.bin/depcheck --json | json
+{
+  "dependencies": [],
+  "devDependencies": [
+    "rollup"
+  ],
+  "missing": {},
+  "using": {
+    "depcheck": [
+      "/mnt/236BF4A2278DBC3C/workspace/_tmp/depcheck-bugs/rollup/package.json"
+    ]
+  },
+  "invalidFiles": {},
+  "invalidDirs": {}
+}
+```
+
 [depcheck]: https://github.com/depcheck/depcheck
 [rollup.js]: https://rollupjs.org/
