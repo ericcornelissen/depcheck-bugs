@@ -1,0 +1,22 @@
+{
+  "name": "depcheck-with-rollup",
+  "version": "0.0.1",
+  "description": "Example of depcheck not detecting rollup.js",
+  "private": true,
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "transpile": "rollup -c",
+    "vet": "depcheck"
+  },
+  "author": "Eric Cornelissen",
+  "license": "Unlicense",
+  "devDependencies": {
+    "depcheck": "1.4.3",
+    "rollup": "2.75.6"
+  },
+  "engine": {
+    "node": "^14.18.0 || ^16.0.0 || ^18.0.0"
+  }
+}
