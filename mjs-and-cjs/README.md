@@ -1,6 +1,7 @@
-# Depcheck bug with `.mjs` and `.cjs
+# Depcheck bug with `.mjs` and `.cjs`
 
 - **depcheck version:** _1.4.3_
+- **resolved in:** <https://github.com/depcheck/depcheck/pull/773>
 
 This project demonstrates a bug with [depcheck] not detecting dependencies used in
 files using the `.mjs` (for ModuleJS, or ESModules) or `.cjs` (for CommonJS) file
